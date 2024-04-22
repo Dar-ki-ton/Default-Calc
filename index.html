@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen"
+      rel="stylesheet"
+    />
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="calc-grid">
+      <input id="display" type="text" readonly />
+
+      <div id="calc-btn">
+        <button onclick="clearDisplay()" id="clear-btn" class="op-btn">
+          AC
+        </button>
+
+        <button onclick="appendtoDisplay('(')" id="right-btn" class="input-btn">
+          (
+        </button>
+
+        <button onclick="appendtoDisplay(')')" id="left-btn" class="input-btn">
+          )
+        </button>
+
+        <button onclick="appendtoDisplay('/')" id="div-btn" class="op-btn">
+          ÷
+        </button>
+
+        <button onclick="appendtoDisplay('7')" id="btn7" class="input-btn">
+          7
+        </button>
+
+        <button onclick="appendtoDisplay('8')" id="btn8" class="input-btn">
+          8
+        </button>
+
+        <button onclick="appendtoDisplay('9')" id="btn9" class="input-btn">
+          9
+        </button>
+
+        <button onclick="appendtoDisplay('*')" id="multi-btn" class="op-btn">
+          x
+        </button>
+
+        <button onclick="appendtoDisplay('4')" id="btn4" class="input-btn">
+          4
+        </button>
+
+        <button onclick="appendtoDisplay('5')" id="btn5" class="input-btn">
+          5
+        </button>
+
+        <button onclick="appendtoDisplay('6')" id="btn6" class="input-btn">
+          6
+        </button>
+
+        <button onclick="appendtoDisplay('+')" id="plus-btn" class="op-btn">
+          +
+        </button>
+
+        <button onclick="appendtoDisplay('1')" id="btn1" class="input-btn">
+          1
+        </button>
+
+        <button onclick="appendtoDisplay('2')" id="btn2" class="input-btn">
+          2
+        </button>
+
+        <button onclick="appendtoDisplay('3')" id="btn3" class="input-btn">
+          3
+        </button>
+
+        <button onclick="appendtoDisplay('-')" id="sub-btn" class="op-btn">
+          -
+        </button>
+
+        <button onclick="appendtoDisplay('0')" id="btn0" class="input-btn">
+          0
+        </button>
+
+        <button onclick="appendtoDisplay('.')" id="deci-btn" class="input-btn">
+          .
+        </button>
+
+        <button onclick="appendtoDisplay('-')" id="neg-btn" class="input-btn">
+          (-)
+        </button>
+
+        <button onclick="calculate()" id="equal-btn" class="op-btn">
+          ENTER
+        </button>
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

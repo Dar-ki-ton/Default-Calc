@@ -1,0 +1,77 @@
+html {
+  background: url(code.jpg) no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#calc-grid {
+  background: rgb(46, 46, 46);
+  border: 5px solid black;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+#display {
+  text-align: left;
+  width: 100%;
+  background: #a2b04f;
+  font-size: 4rem;
+  font-family: "Silkscreen", sans-serif;
+}
+
+#calc-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+  width: 130px;
+  height: 60px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.input-btn {
+  background: rgba(234, 224, 205, 0.5);
+
+  transition: background 0.5s;
+}
+
+.input-btn:hover {
+  background: rgb(234, 224, 205);
+
+  transition: background 0.5s;
+}
+
+.op-btn {
+  background: rgba(20, 15, 154, 0.5);
+  color: white;
+
+  transition: background 0.5s;
+}
+
+.op-btn:hover {
+  background: rgb(20, 15, 154);
+
+  transition: background 0.5s;
+}
